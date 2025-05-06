@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  harbour:
+    build: .
+    container_name: harbour_container
+    volumes:
+      - /c/si/trabajo/harbour/revisacopias:/app
+    working_dir: /app
+    command: /bin/bash
+    tty: true
